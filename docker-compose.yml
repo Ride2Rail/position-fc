@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  position-fc:
+    container_name: position-fc
+    build: .
+    ports:
+      - "5007:5000"
+    environment:
+      FLASK_ENV: development
+    networks:
+      - offer-enhancer-net
+
+networks:
+  offer-enhancer-net:
+    external:
+      name: trias-extractor_offer-enhancer-net
+
+
