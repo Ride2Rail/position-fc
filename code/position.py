@@ -89,7 +89,7 @@ def extract():
             #["id","trip","bookable_total","complete_total","offer_items"],
             #["id","duration","start_time", "end_time","num_interchanges","legs"]
             ["num_interchanges"],
-            ["start_time", "end_time","leg_stops","transportation_mode", "journey","duration","driver","vehicle","leg_track","leg_type", "passenger","number_of_persons_sharing_trip","vehicle_age","ride_smoothness","repeated_trip"
+            ["start_time", "end_time","leg_stops","transportation_mode", "journey","duration","leg_track","leg_type", "passenger","ride_smoothness","repeated_trip"
             ]
             )
     except redis.exceptions.ConnectionError as exc:
